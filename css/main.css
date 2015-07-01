@@ -2,6 +2,17 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Shoguns Clan';
+	src: url('../fonts/shoguns-clan.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Bonzai';
+	src: url('../fonts/bonzai.woff') format('woff');
+
+}
+
 body {
 	background-color: black;
 	max-width: 1500px;
@@ -24,50 +35,74 @@ body {
 	display: block;
 	/*margin-left: -100px;*/
 
-	border: 3px solid blue;
+	border:;
 }
 
 .hadouken {
 	background-image: url('../images/hadouken.gif');
-	outline: 5px solid red;
 	width: 156px;
 	height: 90px;
 	position: absolute;
 	left: 550px;
 	top: 171px;
-	float: left;
+	float: ;
 	z-index: 10;
 }
 
-.ryu1, 
-.ryu2, 
-.ryu3 {
+.ryu-po, 
+.ryu-sta, 
+.ryu-thr {
 	width: 659px;
 	height: 494px;
 }
 
-.ryu1, 
-.ryu2 {
+.ryu-po, 
+.ryu-thr,
+.hadouken,
+.logo {
 	display: none;
 }
 
-.ryu1 {
-	background-image: url('../images/ryu-ready-position.gif')
+.ryu-po {
+	background-image: url('../images/ryu-ready-position.gif');
 }
-.ryu2 {
-	background-image: url('../images/ryu-standing-still.png')
+.ryu-sta {
+	background-image: url('../images/ryu-standing-still.png');
 }
-.ryu3 {
-	background-image: url('../images/ryu-throwing-hadouken.png')
+.ryu-thr {
+	background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.ryu1, 
-.ryu2, 
-.ryu3,
+.ryu-po, 
+.ryu-sta, 
+.ryu-thr,
 .hadouken {
 	background-repeat: no-repeat;
 }
 
+.howto {
+	display: inline-block;
+	text-align: center;
+	width: 700px;
+	display: none;
+}
+
+.howto p {
+	width: 250px;
+	height: 250px;
+	font-size: 1.7rem;
+	font-family: 'Bonzai', 'Orienta', sans-serif;
+}
+
+.first {
+	float: left;
+	max-width: 200px;
+}
+.second {
+	position: absolute;
+	left: 235px;
+	top: 200px;
+}
 
 
 
@@ -78,11 +113,44 @@ body {
 	padding-top: 75px;
 	position: absolute;
 	left: 710px;
-	border: 3px solid blue;
+	border: ;
 }
 
+.logo {
+	background-image: url('../images/logo.gif');
+	background-repeat: no repeat;
+	background-size: cover;
+	width: 420px;
+	height: 200px;
+	position: absolute;
+	top: 133px;
+}
 
+.jq-logo {
+	background-image: url('../images/jq-logo.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center; 
+	width: 420px;
+	height: 200px;
+	position: absolute;
+	top: 133px;
+	display: none;
+}
 
+.presents {
+	width: 450px;
+	height: 150px;
+	font-size: 3.4rem;
+	position: absolute;
+	top: 268px;
+	left: 109px;
+	display: none;
+}
+
+h2 {
+	font-family: 'Shoguns Clan';
+}
 
 
 /*.container {
@@ -117,7 +185,7 @@ body {
 	text-align: center;-----------------------
 
 }
-.ryu1 {
+.ryu-po {
 	margin-left: -100px;
 	/*position: relative;-------------------------
 	
