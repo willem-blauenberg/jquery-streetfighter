@@ -50,7 +50,25 @@ $(document).ready(function() {
 */
 
 
+
+
+
+
+
 $(document).ready(function() {
+	
+
+
+
+	//AUDIO -- COPYPASTE
+
+	function playHadouken () {
+	  $('#hadouken-sound')[0].volume = 0.5;
+	  $('#hadouken-sound')[0].load();
+	  $('#hadouken-sound')[0].play();
+	}
+
+
 	$(".logo").fadeIn(4000, "linear");
 	$(".logo").fadeOut(4000, "linear");
 	$(".jq-logo").delay(8000).fadeIn(2000, "linear");
@@ -58,6 +76,7 @@ $(document).ready(function() {
 	$(".presents").delay(8000).fadeIn(2000, "linear");
 	$(".presents").fadeOut(4000, "linear");
 	$(".howto").delay(14000).fadeIn(2000);
+	
 	
 
 	$(".leftside").mouseenter(function() {
@@ -73,11 +92,12 @@ $(document).ready(function() {
 
 
 	.mousedown(function() {
+		playHadouken(); //AUDIO COPY PASTE
 		$(".ryu-po").hide();
 		$(".ryu-thr").show();
-		$(".hadouken").show().animate({'left': '950px'}, 500, 
+		$(".hadouken").finish().show().animate({'left': '1200px'}, 500, 
         	function() {
-				$(this).stop();
+				//$(this).stop();
 				$(this).hide();
 				$(this).css('left', '570px');
 			});
@@ -92,3 +112,8 @@ $(document).ready(function() {
 
 
 });
+
+
+
+
+	
