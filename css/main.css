@@ -51,7 +51,8 @@ body {
 
 .ryu-po, 
 .ryu-sta, 
-.ryu-thr {
+.ryu-thr,
+.ryu-cool {
 	width: 659px;
 	height: 494px;
 }
@@ -59,7 +60,8 @@ body {
 .ryu-po, 
 .ryu-thr,
 .hadouken,
-.logo {
+.logo, 
+.ryu-cool {
 	display: none;
 }
 
@@ -73,10 +75,15 @@ body {
 	background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
 .ryu-po, 
 .ryu-sta, 
 .ryu-thr,
-.hadouken {
+.hadouken,
+.ryu-cool {
 	background-repeat: no-repeat;
 }
 
@@ -103,9 +110,6 @@ body {
 	left: 235px;
 	top: 200px;
 }
-
-
-
 
 .rightside {
 	height: 425px;
@@ -151,7 +155,6 @@ body {
 h2 {
 	font-family: 'Shoguns Clan';
 }
-
 
 /*.container {
 	max-width: 100%;
