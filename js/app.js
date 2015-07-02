@@ -57,19 +57,42 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	
+	$(".btn").click (function toggleMuteAudio(){
+        $(".btn2").show();
+        $(".btn").hide();
+        $('#themesong')[0].muted = true;
+        $('#hadouken-sound')[0].muted = true;
+        $('#coolsound')[0].muted = true;
+    });
+
+    $(".btn2").click (function toggleMuteAudio(){
+        $(".btn").show();
+        $(".btn2").hide();
+        /*$('#themesong')[0].volume = 0.5;
+        $('#hadouken-sound')[0].volume = 0.5;
+        $('#coolsound')[0].volume = 0.5;*/
+        $('#themesong')[0].muted = false;
+        $('#hadouken-sound')[0].muted = false;
+        $('#coolsound')[0].muted = false;
+    });
 	
-	//AUDIO -- COPYPASTE
+
+	//AUDIO INTRO
 	function playHadouken () {
 	  $('#hadouken-sound')[0].volume = 0.5;
 	  $('#hadouken-sound')[0].load();
 	  $('#hadouken-sound')[0].play();
+	  /*if ((".btn").click() == true) {
+	  	$('#hadouken-sound')[0].volume = 0;
+	  }*/
 	}
 
 	//AUDIO THEME
+	
 	$('#themesong')[0].volume = 0.5;
 	$('#themesong')[0].load();
 	$('#themesong')[0].play();
-
+	
 
 	//AUDIO COOL
 	function playCool () {
@@ -147,6 +170,11 @@ $(document).ready(function() {
 		$(".ryu-thr").hide();
 		$(".hadouken").hide();
 	})
+
+
+
+
+
 
 });
 
